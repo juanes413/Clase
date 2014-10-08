@@ -33,7 +33,8 @@ public class Main extends Activity{
     
     public void click(View v){
 //    	Toast.makeText(this, R.string.primer_actividad, Toast.LENGTH_SHORT).show();
-    	Intent intent = new Intent(this, List.class);
+    	Intent intent = new Intent(this, ActivityFragment.class);
+    	intent.putExtra("id", 33);
     	startActivity(intent);
     	
     }

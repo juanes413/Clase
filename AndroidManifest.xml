@@ -8,9 +8,11 @@
         android:minSdkVersion="14"
         android:targetSdkVersion="19" />
 
-    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
+        android:name=".Inicializando"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
@@ -27,6 +29,14 @@
         <activity
             android:name=".List"
             android:label="@string/title_activity_list" >
+        </activity>
+        <activity
+            android:name=".ActivityFragment"
+            android:label="@string/title_activity_activity_fragment" >
+        </activity>
+        <activity
+            android:name=".VerImagen"
+            android:label="@string/title_activity_ver_imagen" >
         </activity>
     </application>
 
