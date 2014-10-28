@@ -2,5 +2,6 @@
 <resources>
     
     <color name="green">#339966</color>
+    <color name="fondo">#EDEDED</color>
     
 </resources>

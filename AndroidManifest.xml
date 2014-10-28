@@ -12,14 +12,14 @@
     <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
 
     <application
-        android:name=".Inicializando"
+        android:name=".InitApp"
         android:allowBackup="true"
         android:icon="@drawable/ic_launcher"
         android:label="@string/app_name"
         android:theme="@style/AppTheme" >
         <activity
             android:name=".Main"
-            android:label="@string/primer_actividad" >
+            android:theme="@style/AppBaseTheme.NoActionBar" >
             <intent-filter>
                 <action android:name="android.intent.action.MAIN" />
 
@@ -27,17 +27,11 @@
             </intent-filter>
         </activity>
         <activity
-            android:name=".List"
-            android:label="@string/title_activity_list" >
-        </activity>
+            android:name=".Home"
+            android:label="@string/drawer" />
         <activity
-            android:name=".ActivityFragment"
-            android:label="@string/title_activity_activity_fragment" >
-        </activity>
-        <activity
-            android:name=".VerImagen"
-            android:label="@string/title_activity_ver_imagen" >
-        </activity>
+            android:name=".Details"
+            android:label="@string/details" />
     </application>
 
 </manifest>
